@@ -1,0 +1,35 @@
+version: 2
+name: custom
+displayName: Custom MCP Servers
+registry:
+  easywebhook:
+    description: "Send webhooks to any HTTP endpoint including Discord, Slack, and custom APIs. Supports .env file for storing webhook URLs."
+    title: "EasyWebhook"
+    type: server
+    dateAdded: "2025-01-22T20:24:00Z"
+    image: easywebhook-mcp-server:latest
+    ref: ""
+    readme: ""
+    toolsUrl: ""
+    source: ""
+    upstream: ""
+    icon: ""
+    tools:
+      - name: send_webhook
+      - name: send_discord_webhook
+      - name: send_slack_webhook
+      - name: send_webhook_by_alias
+      - name: send_discord_webhook_by_alias
+      - name: send_slack_webhook_by_alias
+      - name: list_webhooks
+    metadata:
+      category: integration
+      tags:
+        - webhook
+        - discord
+        - slack
+        - notifications
+        - http
+        - dotenv
+      license: MIT
+      owner: local
